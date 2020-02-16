@@ -1,21 +1,21 @@
 .header{
-  background: powerpink;
+  background: #FF00E7;
   color: white;
-  text-align: left;
+  text-align: center;
   font-size: 60px;
   font-family: arial;
   padding: 10px;
 }
 body {
-  background-image: pink;
+  background: #EC9DE5;
 }
 
 
 j6{
   text-align: left;
-  margin-left: 10px;
+  margin-left: 20px;
   font-family: arial;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 
@@ -23,4 +23,5 @@ img {
   float:right;
   margin-right: 30px;
   margin-top: 20px;
+  size: 80px;
 }
