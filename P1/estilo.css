@@ -1,4 +1,6 @@
 .header{
+  border: solid;
+  border-color: blue;
   background: #FF00E7;
   color: white;
   text-align: center;
@@ -10,10 +12,18 @@ body {
   background: #EC9DE5;
 }
 
+j1 {
+  border: solid;
+  border-color: pink;
+  color: blue;
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 100px;
+  font-size: 50px;
+}
 
-j6{
-  text-align: left;
-  margin-left: 20px;
+.j6{
+  margin-left: 80px;
   font-family: arial;
   font-size: 20px;
 }
@@ -21,7 +31,7 @@ j6{
 
 img {
   float:right;
-  margin-right: 30px;
+  margin-right: 100px;
   margin-top: 20px;
   size: 80px;
 }
