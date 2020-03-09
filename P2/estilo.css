@@ -13,7 +13,7 @@ body {
   border-color: orange;
   border-style: ridge;
 }
-button{
+.calculadora td button{
   margin: auto;
   display: block;
   width: 40px;
@@ -21,7 +21,7 @@ button{
   border-style: double;
   border-color: orange;
   background-color: #abedd8;
-  }
+}
 
 #display{
     border-style: solid;

@@ -1,106 +1,91 @@
+var operando1;
+var operando2;
+var operacion;
 function main() {
-  var  botonuno: document.getElementById('botonuno');
-  var  botondos: document.getElementById('botondos');
-  var  botontres: document.getElementById('botontres');
-  var  botoncuatro: document.getElementById('botoncuatro');
-  var  botoncinco: document.getElementById('botoncinco');
-  var  botonseis: document.getElementById('botonseis');
-  var  botonsiete: document.getElementById('botonsiete');
-  var  botonocho: document.getElementById('botonocho');
-  var  botonnueve: document.getElementById('botonnueve');
-  var  botoncero: document.getElementById('botoncero');
-  var  botonac: document.getElementById('botonac');
-  var  botondividir: document.getElementById('botondividir');
-  var  botonmultiplicar: document.getElementById('botonmultiplicar');
-  var  botonrestar: document.getElementById('botonrestar');
-  var  botonsumar: document.getElementById('botonsumar');
-  var  botonigual: document.getElementById('botonigual');
-  var operando1;
-  var operando2;
-  var operacion;
+  var  uno= document.getElementById("uno");
+  var  dos= document.getElementById("dos");
+  var  tres= document.getElementById("tres");
+  var  cuatro= document.getElementById("cuatro");
+  var  cinco= document.getElementById("cinco");
+  var  seis= document.getElementById("seis");
+  var  siete= document.getElementById("siete");
+  var  ocho= document.getElementById("ocho");
+  var  nueve= document.getElementById("nueve");
+  var  cero= document.getElementById("cero");
+  var  ac= document.getElementById("ac");
+  var  dividir= document.getElementById("dividir");
+  var  multiplicar= document.getElementById("multiplicar");
+  var  restar= document.getElementById("restar");
+  var  sumar= document.getElementById("sumar");
+  var  igual= document.getElementById("igual");
+  var display= document.getElementById("resultado");
 
-  btonuno.onclick = () => {
-    display = document.getElementById('display')
-      display.innerHTML +="1"
+  uno.onclick = function()  {
+    display.innerHTML = display.innerHTML + "1";
     }
-  botondos.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="2"
+  dos.onclick = function()  {
+    display.innerHTML = display.innerHTML + "2";
   }
-  botontres.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="3"
+  tres.onclick = function() {
+    display.innerHTML = display.innerHTML + "3";
   }
-  botoncuatro.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="4"
+  cuatro.onclick = function()  {
+    display.innerHTML = display.innerHTML + "4";
   }
-  botoncinco.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="5"
+  cinco.onclick = function()  {
+    display.innerHTML = display.innerHTML + "5";
   }
-  botonseis.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="6"
+  seis.onclick = function()  {
+    display.innerHTML = display.innerHTML + "6";
   }
-  botonsiete.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="7"
+  siete.onclick = function()  {
+    display.innerHTML = display.innerHTML + "7";
   }
-  botonocho.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="8"
+  ocho.onclick = function()  {
+    display.innerHTML = display.innerHTML + "8";
   }
-  botonnueve.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="9"
+  nueve.onclick = function()  {
+    display.innerHTML = display.innerHTML + "9";
   }
-  botoncero.onclick = () => {
-    display = document.getElementById('display')
-    display.innerHTML +="0"
+  cero.onclick = function()  {
+    display.innerHTML = display.innerHTML + "0";
   }
-  botonac.onclick = () => {
-    operab.resetear();
+  ac.onclick = function()  {
+    resetear();
   }
-  botondividir.onclick = () => {
-    display = document.getElementById('display')
+  dividir.onclick = function() {
     operando1 = display.innerHTML;
     operacion = "/";
     display.innerHTML = "";
   }
-  botonmultiplicar.onclick = () => {
-    display = document.getElementById('display')
+  multiplicar.onclick = function() {
     operando1 = display.innerHTML;
     operacion = "*";
     display.innerHTML = "";
   }
-  botonrestar.onclick = () => {
-    display = document.getElementById('display')
+  restar.onclick = function()  {
     operando1 = display.innerHTML;
     operacion = "-";
     display.innerHTML = "";
   }
-  botonsumar.onclick = () => {
-    display = document.getElementById('display')
+  sumar.onclick = function() {
     operando1 = display.innerHTML;
     operacion = "+";
     display.innerHTML = "";
   }
-  botonigual.onclick = () => {
-    display = document.getElementById('display')
+  igual.onclick = function() {
     operando2 = display.innerHTML;
-    operandoresultado();
+    resultado();
   }
   function resetear(){
-    display = document.getElementById('display')
     display.innerHTML = "";
     operando1 = 0;
     operando2 = 0;
-    operacion = "";
+    operando = "";
   }
 
   function resultado(){
-    var final = 0;
+    var resul = 0;
     switch(operacion){
       case "+":
         resul = parseFloat(operando1) + parseFloat(operando2);
@@ -116,6 +101,6 @@ function main() {
         break;
     }
     resetear();
-    display.innerHTML = final;
+    display.innerHTML = resul;
   }
 }
