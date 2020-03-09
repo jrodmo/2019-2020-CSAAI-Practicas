@@ -1,103 +1,123 @@
-var operando1;
-var operando2;
+var valor1;
+var valor2;
 var operacion;
-function main() {
-  var  uno= document.getElementById("uno");
-  var  dos= document.getElementById("dos");
-  var  tres= document.getElementById("tres");
-  var  cuatro= document.getElementById("cuatro");
-  var  cinco= document.getElementById("cinco");
-  var  seis= document.getElementById("seis");
-  var  siete= document.getElementById("siete");
-  var  ocho= document.getElementById("ocho");
-  var  nueve= document.getElementById("nueve");
-  var  cero= document.getElementById("cero");
-  var  ac= document.getElementById("ac");
-  var  dividir= document.getElementById("dividir");
-  var  multiplicar= document.getElementById("multiplicar");
-  var  restar= document.getElementById("restar");
-  var  sumar= document.getElementById("sumar");
-  var  igual= document.getElementById("igual");
-  var display= document.getElementById("resultado");
 
-  uno.onclick = function()  {
-    display.innerHTML = display.innerHTML + "1";
-    }
-  dos.onclick = function()  {
-    display.innerHTML = display.innerHTML + "2";
+function main(){
+  var uno = document.getElementById('uno')
+  var dos = document.getElementById('dos')
+  var tres = document.getElementById('tres')
+  var cuatro = document.getElementById('cuatro')
+  var cinco = document.getElementById('cinco')
+  var seis = document.getElementById('seis')
+  var siete = document.getElementById('siete')
+  var ocho = document.getElementById('ocho')
+  var nueve = document.getElementById('nueve')
+  var cero = document.getElementById('cero')
+  var ac = document.getElementById('ac')
+  var sumar = document.getElementById('sumar')
+  var restar = document.getElementById('restar')
+  var multiplicar = document.getElementById('multiplicar')
+  var dividir = document.getElementById('dividir')
+  var igual = document.getElementById('igual')
+
+  uno.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML +="1"
   }
-  tres.onclick = function() {
-    display.innerHTML = display.innerHTML + "3";
+  dos.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "2"
   }
-  cuatro.onclick = function()  {
-    display.innerHTML = display.innerHTML + "4";
+  tres.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "3"
   }
-  cinco.onclick = function()  {
-    display.innerHTML = display.innerHTML + "5";
+  cuatro.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "4"
   }
-  seis.onclick = function()  {
-    display.innerHTML = display.innerHTML + "6";
+  cinco.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "5"
   }
-  siete.onclick = function()  {
-    display.innerHTML = display.innerHTML + "7";
+  seis.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "6"
   }
-  ocho.onclick = function()  {
-    display.innerHTML = display.innerHTML + "8";
+  siete.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "7"
   }
-  nueve.onclick = function()  {
-    display.innerHTML = display.innerHTML + "9";
+  ocho.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "8"
   }
-  cero.onclick = function()  {
-    display.innerHTML = display.innerHTML + "0";
+  nueve.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "9"
   }
-  ac.onclick = function()  {
-    resetear();
+  cero.onclick = () => {
+    display = document.getElementById('display')
+    display.innerHTML += "0"
   }
-  dividir.onclick = function() {
-    operando1 = display.innerHTML;
-    operacion = "/";
-    display.innerHTML = "";
+  ac.onclick = () => {
+    display = document.getElementById('display')
+    resetear()
   }
-  multiplicar.onclick = function() {
-    operando1 = display.innerHTML;
-    operacion = "*";
-    display.innerHTML = "";
-  }
-  restar.onclick = function()  {
-    operando1 = display.innerHTML;
-    operacion = "-";
-    display.innerHTML = "";
-  }
-  sumar.onclick = function() {
-    operando1 = display.innerHTML;
+  sumar.onclick = () => {
+    display = document.getElementById('display')
+    valor1 = display.innerHTML;
     operacion = "+";
     display.innerHTML = "";
   }
-  igual.onclick = function() {
-    operando2 = display.innerHTML;
-    resultado();
+  restar.onclick = () => {
+    display = document.getElementById('display')
+    valor1 = display.innerHTML;
+    operacion = "-";
+    display.innerHTML = "";
+  }
+  multiplicar.onclick = () => {
+    display = document.getElementById('display')
+    valor1 = display.innerHTML;
+    operacion = "*";
+    display.innerHTML = "";
+  }
+  dividir.onclick = () => {
+    display = document.getElementById('display')
+    valor1 = display.innerHTML;
+    operacion = "/";
+    display.innerHTML = "";
+  }
+  igual.onclick = () => {
+  display = document.getElementById('display')
+  valor2 = display.innerHTML;
+  resultado();
+  }
+  function clean(){
+    display.innerHTML = "";
   }
   function resetear(){
-    display.innerHTML = "";
-    operando1 = 0;
-    operando2 = 0;
-    operando = "";
+    clean();
+    display = document.getElementById('display')
+    valor1 = 0;
+    valor2 = 0;
+    operacion = "";
   }
 
   function resultado(){
     var resul = 0;
     switch(operacion){
       case "+":
-        resul = parseFloat(operando1) + parseFloat(operando2);
+        resul = parseFloat(valor1) + parseFloat(valor2);
         break;
       case "-":
-        resul = parseFloat(operando1) - parseFloat(operando2);
+        resul = parseFloat(valor1) - parseFloat(valor2);
         break;
       case "*":
-        resul = parseFloat(operando1) * parseFloat(operando2);
+        resul = parseFloat(valor1) * parseFloat(valor2);
         break;
       case "/":
-        resul = parseFloat(operando1) / parseFloat(operando2);
+        resul = parseFloat(valor1) / parseFloat(valor2);
         break;
     }
     resetear();
