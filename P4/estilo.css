@@ -1,0 +1,107 @@
+body{
+    background-image: url("lebron.jpg");
+    padding-top: 25px;
+}
+#content{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 0.1px;
+    padding-bottom: 20px;
+}
+boton{
+    border: 1px solid ;
+    color: #F3FF00;
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-left: 255px;
+    margin-bottom: 5px;
+    background-color:#B628EF ;
+}
+#contador{
+    background-color: #B628EF;
+    font-family: sans-serif;
+    font-size:40px;
+    text-shadow:0px 0px 1px #fff;
+    color: #F3FF00;
+    width: 160px;
+    padding-left: 5px;
+    margin-left: 210px;
+}
+#principal{
+    margin-left: 70px;
+    margin-bottom: 10PX;
+}
+.input{
+    border-radius: 5px;
+    color: #F3FF00;
+    border: 1px solid #F3FF00;
+    background-color: #B628EF;
+    height: 25px;
+    width: 60px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.video{
+    margin-left: 15px;
+}
+.video1{
+    margin-left: 140px;
+}
+
+.video2{
+    margin-left: 140px;
+}
+
+#reproducir1{
+    margin-left: 0px;
+    height: 35px;
+    width: 75px;
+    color: #F3FF00;
+    background-color:#B628EF ;
+}
+#reproducir2{
+    margin-left: 115px;
+    height: 35px;
+    width: 75px;
+    color: #F3FF00;
+    background-color:#B628EF ;
+}
+#reproducir3{
+    margin-left: 115px;
+    height: 35px;
+    width: 75px;
+    color: #F3FF00;
+    background-color:#B628EF ;
+}
+#reproducir{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 110px;
+    color: #B628EF;
+}
+#acabar{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 110px;
+    color: #B628EF;
+}
+#end{
+  color: #F3FF00;
+}
+
+#bucle{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 175px;
+    color: #F3FF00;
+    background-color:#B628EF ;
+}
