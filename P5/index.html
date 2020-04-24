@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>filtros</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="filtro.js"></script>
+  </head>
+  <body onload="main();">
+    <div class="all">
+      <p id="titulos">imagen original</p>
+      <img src="IMG_0300.PNG" id="foto">
+      <p id="titulos">imagen a modificar</p>
+      <canvas id="display"></canvas>
+      <div class="panel">
+        <p id="red">rango de color rojo</p>
+        <input type="range" id="redlizador" min="0" max="255" value="255"/>
+        <p id="redvalue">00</p>
+        <p id="blue">rango de color azul</p>
+        <input type="range" id="bluelizador" min="0" max="255" value="255"/>
+        <p id="bluevalue">00</p>
+        <p id="green">rango de color verde</p>
+        <input type="range" id="greenlizador" min="0" max="255" value="255"/>
+        <p id="greenvalue">00</p>
+        <br>
+        <button type="botongrises" name="button" id="gris">gris</button>
+      </div>
+    </div>
+  </body>
+</html>

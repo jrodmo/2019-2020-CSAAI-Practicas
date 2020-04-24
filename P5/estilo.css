@@ -1,0 +1,107 @@
+body{
+  background-image: url("baloncesto.jpg");
+}
+
+.all{
+  text-align: center;
+}
+
+#titulos{
+  text-shadow: 3px 2px orange;
+  color: silver;
+  font-size: xx-large;
+}
+
+#red{
+  text-shadow: 3px 2px orange;
+  color: red;
+  font-size: x-large;
+}
+
+#blue{
+  text-shadow: 3px 2px blue;
+  color: lightblue;
+  font-size: x-large;
+}
+
+#green{
+  text-shadow: 3px 2px green;
+  color: lightgreen;
+  font-size: x-large;
+}
+
+#redvalue{
+  text-shadow: 3px 2px orange;
+  color: red;
+  font-size: x-large;
+}
+
+#bluevalue{
+  text-shadow: 3px 2px blue;
+  color: lightblue;
+  font-size: x-large;
+}
+
+#greenvalue{
+  text-shadow: 3px 2px green;
+  color: lightgreen;
+  font-size: x-large;
+}
+
+#foto{
+  border-radius: 50px;
+  border-style: groove;
+  border-color: orange;
+}
+
+#display{
+  border-radius: 50px;
+  border-style: groove;
+  border-color: silver;
+}
+
+#botoncolores{
+  text-decoration: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: black;
+  background-color: silver;
+  border-radius: 15px;
+  border: 3px double orange;
+}
+
+#botongrises{
+  text-decoration: none;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: helvetica;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: black;
+  background-color: silver;
+  border-radius: 15px;
+  border: 3px double orange;
+}
+
+#botoncolores:hover{
+  background-color: black;
+  color: silver;
+}
+
+#botongrises:hover{
+  background-color: black;
+  color: silver;
+}
+
+.panel{
+  border-radius: 50px;
+  border-style: groove;
+  border-color: green;
+}
