@@ -16,9 +16,6 @@ function main(){
   ctx.drawImage(foto, 0,0);
 
   function RGB() {
-    redvalue.innerHTML = redlizador.value
-    bluevalue.innerHTML = bluelizador.value
-    greenvalue.innerHTML = grenlizador.value
     ctx.drawImage(foto, 0,0);
     var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
     var data = imgData.data
