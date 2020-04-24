@@ -1,12 +1,12 @@
 function main(){
   var foto = document.getElementById('foto')
   var canvas = document.getElementById('display');
-  var redlizador = document.getElementById('redlizador')
-  var redvalue = document.getElementById('redvalue')
-  var bluelizador = document.getElementById('bluelizador')
-  var bluevalue = document.getElementById('bluevalue')
-  var greenlizador = document.getElementById('greenlizador')
-  var greenvalue = document.getElementById('greenvalue')
+  redlizador = document.getElementById('redlizador')
+  redvalue = document.getElementById('redvalue')
+  bluelizador = document.getElementById('bluelizador')
+  bluevalue = document.getElementById('bluevalue')
+  greenlizador = document.getElementById('greenlizador')
+  greenvalue = document.getElementById('greenvalue')
   gris = document.getElementById('gris')
 
   canvas.width = foto.width;
@@ -37,7 +37,6 @@ function main(){
         data[i+2] = umbral_B;
       }
     }
-    ctx.putImageData(imgData, 0, 0);
   }
 
 
