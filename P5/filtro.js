@@ -54,14 +54,14 @@ function main(){
 
   redlizador.oninput = () => {
     redvalue.innerHTML = redlizador.value
-    RGB();
+    RGB()
   }
   bluelizador.oninput = () => {
     bluevalue.innerHTML = bluelizador.value
-    RGB();
+    RGB()
   }
   greenlizador.oninput = () => {
     greenvalue.innerHTML = greenlizador.value
-    RGB();
+    RGB()
   }
 }
