@@ -20,23 +20,21 @@ function main(){
     bluevalue.innerHTML = bluelizador.value
     greenvalue.innerHTML = grenlizador.value
     ctx.drawImage(foto, 0,0);
-    imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    data = imgData.data
+    var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    var data = imgData.data
     umbral_R = redlizador.value
     umbral_B = bluelizador.value
     umbral_G = greenlizador.value
 
     for (var i = 0; i < data.length; i+=4) {
-      if (data[i] > umbral_R){
+      if (data[i] > umbral_R)
         data[i] = umbral_R;
-      }
-      if (data[i+1] > umbral_G){
+      if (data[i+1] > umbral_G)
         data[i+1] = umbral_G;
-      }
-      if (data[i+2] > umbral_B){
+      if (data[i+2] > umbral_B)
         data[i+2] = umbral_B;
-      }
     }
+    ctx.putImageData(imgData, 0, 0);
   }
 
 
@@ -58,15 +56,15 @@ function main(){
 }
 
   redlizador.oninput = () => {
+    redvalue.innerHTML = redlizador.value
     RGB();
-  ctx.putImageData(imgData, 0, 0);
   }
   bluelizador.oninput = () => {
+    bluevalue.innerHTML = bluelizador.value
     RGB();
-  ctx.putImageData(imgData, 0, 0);
   }
   greenlizador.oninput = () => {
+    greenvalue.innerHTML = greenlizador.value
     RGB();
-  ctx.putImageData(imgData, 0, 0);
   }
 }
